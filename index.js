@@ -23,7 +23,7 @@ const messageRoutes = require("./Routes/messageRoutes");
 
 const connectDb = async () => {
   try {
-    const connect = await mongoose.connect(process.env.MONGO_URI);
+    const connect = await mongoose.connect('mongodb+srv://prachigoel1103:dZNHsjIWQIr3LuIX@cluster0.jtksjlz.mongodb.net/?retryWrites=true&w=majority');
     console.log("Server is Connected to Database");
   } catch (err) {
     console.log("Server is NOT connected to Database", err.message);
