@@ -1,11 +1,13 @@
 {
-  "name": "live-chat-server",
+  "name": "live-chat",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
+      "server": "nodemon index.js",
+    "client":"npm start --prefix ./client",
     "dev":"concurrently\"npm start\"\"npm run client \""
   },
   "author": "Prachi",
